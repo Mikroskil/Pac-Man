@@ -5,613 +5,517 @@
 <title>allcompany_portal</title>
 <style type="text/css">
 <!--
+.a{
+	text-decoration:blink;
+	color: #0000FF;
+}
+.b{
+	text-align:center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-transform:none;
+}
+
 body {
 	background-color: #000000;
 }
 body,td,th {
 	color: #FFFFFF;
 }
-.style1 {
-	font-size: 24px;
-	font-family: "Adobe Garamond Pro", Garamond, Georgia, sans-serif;
+.home1 {
+	text-align:center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	text-transform:none;
+	color:#999999;
 }
-.area_menu_kiri {
-	height: auto;
-	width: 175px;
-	margin-left: 6px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px
+
+.home2 {
+	text-align:right;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	text-transform:none;
+	color: #FFFFFF;
 }
+
+.style5 {
+	text-align:center;
+	text-shadow:#FFFFFF;
+	text-decoration:blink;
+	font-size:48pt;
+	font:"Times New Roman", Times, serif;
+	text-transform:uppercase;
+	color: #0000FF;
+}
+
+.style6 {
+	text-align:center;
+	text-shadow:#FFFFFF;
+	text-decoration:blink;
+	font-size:16pt;
+	font:"Times New Roman", Times, serif;
+	text-transform:uppercase;
+	color: #0000FF;
+}
+
+
+.style7 {color: #FFFF00}
+a:link {
+	color: #FF9933;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.menulogin {
+}
+
 -->
 </style>
 <link href=" " rel="stylesheet" type="text/css" />
 <script type="text/JavaScript">
 <!--
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+
+
 
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
 //-->
 </script>
+<style type="text/css">
+<!--
+.style8 {color: #FF9933}
+-->
+</style>
 </head>
 
-<body onload="MM_preloadImages('TSearch Rollover.jpg','file:///C|/xampp/htdocs/allcompanymanagementportal/image/TSearch Rollover.jpg')">
-<table width="1296" border="0" align="center">
-  <tr>
-    <th height="1139" colspan="4" scope="col"><img src="../image/jakarta.jpg" width="1287" height="1132" border="0" usemap="#Map" /></th>
-  </tr>
-  <tr>
-    <td colspan="4"><table width="100%" border="0" cellspacing="2">
+<body onload="MM_preloadImages('file:///D|/JUN'S FOLDER/SEMESTER V/PKTI/LF/TSearch Rollover.jpg')">
+<table width="821" border="0" align="center">
+<tr>
+    <td width="281">
+		<table width="100%" height="100%" border="0" cellspacing="0">
         <tr>
-          <th width="3%" align="left" bgcolor="#000000" scope="col">PT . </a></th>
-           <th width="48%" scope="col"><form id="form1" name="form1" method="post" action="">
-            <label></label>
-            <label>
-            <input name="textfield" type="text" size="100" />
-            </label>
-          </form>          </th>
-		  <th width="6%" height="26" scope="col"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','../image/TSearch Rollover.jpg',1)"><img src="../image/TSearch.jpg" name="Image3" width="68" height="23" border="0" id="Image3" /></a> </th>
-          <th width="19%" scope="col">&nbsp;</th>
-          <th width="24%" scope="col">&nbsp;</th>
+			<td height="30" colspan="3" align="center" valign="bottom">
+				<table width="100%" border="0" align="left">
+    	        <tr>
+                <th width="2%" height="24" align="left">PT.</th>
+				<form id="pencarian" name="pencarian" method="post" action="">
+                <td width="23%" align="left"><input name="search" id="search" type="text" size="50" maxlength="50" /></td>
+				<td width="5%"><input type="submit" name="submit" id="submit" value="Search"></td>
+				</form>
+               	<th width="27%" align="center"><a href="medan.php" class="home1 style8">Medan</a></th>
+				<th width="21%" align="center"><a href="bandung.php" class="home1 style8">Bandung</a></th>
+				<th width="22%" align="center"><a href="surabaya.php" class="home1 style8">Surabaya</a></th>
+              </tr>
+            </table>
+		</td>
+       </tr>
+        <tr>
+          <td height="100" colspan="3" align="center" valign="bottom"><div align="justify"><img src="../image/bandung5.png" width="1320" height="150" /></div></td>
         </tr>
         <tr>
-          <td height="634" colspan="5"><div class="listper">
-            <table width="100%" border="1" cellspacing="2">
+          <td height="350" colspan="3" align="center" valign="top"><div class="listper">
+            
+			<table width="100%" height="81%" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <th colspan="4" align="left" valign="middle" scope="col">Nama - nama perusahaan terdaftar : </th>
-                </tr>
+                <th height="35" colspan="4" align="left" valign="middle">Nama - nama perusahaan terdaftar : </th>
+              </tr>
               <tr>
-                <td width="29%"><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" valign="middle" scope="col">1.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td width="27%"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" valign="middle" >01.</th>
+                        <th width="95%" align="left" valign="middle"><a href="themehp" class="style8">PT.ABC SENTOSA </a></th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td width="25%"><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">16.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td width="27%"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >11.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td width="23%"><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">31.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td width="23%"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >21.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td width="23%"><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">46.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td width="23%"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >31.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">2.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >02.</th>
+                        <th width="95%" align="left" valign="middle" ><a href="theme2.php" class="style8">PT. XYZ ABADI</a> </th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">17.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >12.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">32.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >22.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">47.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-              </tr>
-              <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">3.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">18.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">33.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">48.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >32.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">4.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >03.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">19.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >13.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">34.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >23.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">49.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-              </tr>
-              <tr>
-               <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">5.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">20.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">35.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">50.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >33.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-               <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">6.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >04.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">21.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >14.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">36.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >24.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">51.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-              </tr>
-              <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">7.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">22.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">37.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">52.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >34.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">8.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >05.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">23.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >15.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">38.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >25.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">53.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-              </tr>
-              <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">9.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">24.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">39.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">54.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >35.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">10.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td height="33"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >06.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">25.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >16.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">40.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >26.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">55.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-              </tr>
-              <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">11.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">26.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">41.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">56.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >36.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">12.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td height="31"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >07.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">27.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >17.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">42.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >27.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">57.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-              </tr>
-              <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">13.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">28.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">43.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
-                </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">58.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >37.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-               <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">14.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >08.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">29.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >18.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">44.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >28.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">59.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >38.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
               <tr>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">15.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >09.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">30.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >19.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">45.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >29.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
-                <td><div class="1.p">
-                  <table width="100%" border="1" cellspacing="2">
-                    <tr>
-                      <th width="5%" align="left" scope="col">60.</th>
-                      <th width="95%" scope="col">&nbsp;</th>
-                    </tr>
-                  </table>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >39.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
+                </div></td>
+              </tr>
+              <tr>
+                <td height="31"><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >10.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
+                </div></td>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >20.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
+                </div></td>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >30.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
+                </div></td>
+                <td><div class="">
+                    <table width="100%" border="0" cellspacing="5">
+                      <tr>
+                        <th width="5%" align="left" >40.</th>
+                        <th width="95%" >&nbsp;</th>
+                      </tr>
+                    </table>
                 </div></td>
               </tr>
             </table>
-          </div>
-            <p>&nbsp;</p>
-          <p>&nbsp; </p></td>
+          </div> </td>
         </tr>
-      </table>
-    <p>&nbsp;</p>    </td>
+      </table>    </td>
   </tr>
+	<tr>
+	<td><hr />
+    	<p align="left"><span class="a">Welcome to..</span></p>
+      	<p align="center"><span class="style5">www.allcom-portal.com</span></p>
+		<p align="center"><a href="../home.php" class="b style8"><strong>HOME</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 &brvbar;&brvbar;
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../logout.php" class="b style8"><strong>LOG OUT</strong></a></p>
+    </td>
+	</tr>
+  
   <tr>
-    <td width="279"><div align="center" class="style1"></div></td>
-    <td width="336"><div align="center"></div></td>
-    <td width="426"><div align="center"></div></td>
-    <td width="227"><div align="center"></div></td>
-  </tr>
+    <td><table width="100%" border="0" cellspacing="5" cellpadding="0" class="home1">
   <tr>
-    <td colspan="4"><img src="../image/footer web.png" width="1288" height="177" /></td>
+    <td >Jln. Thamrin no. xxx - Medan 20000 </td>
+    </tr>
+  <tr>
+    <td>JVM&reg; 2013 Located in Medan - Sumatera Utara, Indonesia </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>Copyright&copy; 2013 </td>
+    </tr>
+  <tr>
+    <td>PAC - MAN TEAM MAKER </td>
+    </tr>
+	</table></td></tr></table></div>
+</table>
   </tr>
 </table>
 
 
-<map name="Map" id="Map"><area shape="rect" coords="975,365,1259,400" href="medan.php" target="_self" alt="medan" />
-<area shape="rect" coords="978,500,1262,534" href="bandung.php" target="_self" alt="bandung" />
-<area shape="rect" coords="993,626,1259,658" href="surabaya.php" target="_self" alt="surabaya" />
-<area shape="rect" coords="1000,765,1270,799" href="yogya.php" target="_self" alt="jogja" />
-<area shape="rect" coords="41,1046,250,1082" href="../index.php" target="_parent" />
-</map></body>
+
+</body>
 </html>
+
