@@ -1,5 +1,5 @@
 <html>
-  <head>
+  <head>  
   <script type="text/javascript">
  //<![CDATA[ 
  // array of possible countries in the same order as they appear in the country selection list 
@@ -7,7 +7,7 @@
  countryLists["empty"] = ["Daerah"]; 
  countryLists["JawaBarat"] = ["Bandung", "BandungBarat", "Bekasi","Bogor","Ciamis","Cianjur","Cirebon","Garut","Indramayu","Karawang","Kuningan","Majalengka","Pangandaran","Purwakarta","Subang","Sukabumi","Sumedang","Tasikmalaya","Banjar","Cimahi","Depok"]; 
  countryLists["DKIJakarta"] = ["KepulauanSeribu","JakartaSelatan","JakartaTimur","JakartaPusat","JakartaBarat","JakartaUtara"]; 
- countryLists["SumateraUtara"] = ["Medan","Asahan", "BatuBara", "Dairi","DeliSerdang","H.Hasundutan","Karo","LabuhanBatu","LBatuSelatan","LBatuUtara","Langkat","Mandailing","Nias","NiasBarat","NiasSelatan","NiasUtara","PadangLawas","PLawasUtara","PakPakBarat","Samosir","SerdangBedagai","Simalungun","TapanuliSelatan","TapanuliTengah","TapanuliUtara","TobaSamosir","Binjai","GunungSitoli","PadangSidempuan","PematangSiantar","Sibolga","TanjungBalai","TebingTinggi"]; 
+ countryLists["SumateraUtara"] = ["Medan","Asahan", "BatuBara", "Dairi","DeliSerdang","H.Hasundutan","Karo","LabuhanBatu","LBatuSelatan","LBatuUtara","Langkat","Mandailing","Nias","NiasBarat","NiasSelatan","NiasUtara","PadangLawas","PLawasUtara","PakPakBarat","Samosir","S.Bedagai","Simalungun","TapanuliSelatan","TapanuliTengah","TapanuliUtara","TobaSamosir","Binjai","GunungSitoli","P.Sidempuan","P.Siantar","Sibolga","TanjungBalai","TebingTinggi"]; 
  countryLists["JawaTimur"]= ["Surabaya","Bangkalan","Banyuwangi","Kanigoro","Bojonegoro","Bondowoso","Gresok","Jember","Jombang","Kediri","Lamongan","Lumajang","Madiun","Magetan","Malang","Mojokerto","Nganjuk","Ngawi","Pacitan","Pamekasan","Pasuruan","Pronorogo","Probolinggo","Sampang","Sidoarjo","Situbondo","Sumenep","Trenggalek","Tuban","Tulungagung","Batu","Kediri","Madiun","Blitar","Malan","Mojokerto","Pasuruan"]; 
  /* CountryChange() is called from the onchange event of a select element. 
  * param selectObj - the select object which fired the on change event. 
@@ -168,16 +168,17 @@ label:before {
 
   </head>
 
-  <body bgcolor="black">
-  <form name="reg_form" id="reg_form" method="post" action="confirm.php">
-
+  <body>
+  <body>
+<form name="reg_form" id="reg_form" method="post" action="adm_cek.php">
   <table>
 <th><td colspan="2"><h1>REGISTRATION</h1></td></th>
   <tr><td colspan="2"><?php echo isset($_GET["msg"])?$_GET["msg"]:"";?>
   </td></tr>
 
 <tr><td colspan="2"><h3>Data Pemilik</h3></td></tr>
-
+<tr><td>ID Admin</td><td><input type="text" name="idadm" id="idadm" /></td></tr>
+<tr><td>Password Admin</td><td><input type="password" name="padm" id="padm" /></td></tr>
 <tr><td>Nama Pengurus</td><td><input type="text" name="nama" id="nama" /></td></tr>
 <tr><td>Alamat Rumah</td><td><input type="text" name="almt" id="almt" /></td></tr>
 <tr><td>Nomor Telp/Hp</td><td><input type="text" name="notlp" id="notlp" /></td></tr>
@@ -199,13 +200,13 @@ label:before {
   </select></td></tr>
 <tr><td>Email Perusahaan</td><td><input type="text" name="mail" id="mail" /></td></tr>
 <tr><td>Jenis Perusahaan</td><td><input type="text" name="jns" id="jns" /></td></tr>
-<tr><td>Status Perusahaan</td><td><label><select id="sts" name="sts">
-<option value="0">-pilihan-</option>
-<option value="1">Kantor Tunggal</option>
-<option value="2">Kantor Pusat</option>
-<option value="3">Kantor Pembantu</option>
-<option value="4">Perwakilan</option>
-<option value="5">Bukan Kantor</option>
+<tr><td>Status Perusahaan</td><td><label><select  id="sts" name="sts">
+<option value="empty">-pilihan-</option>
+<option value="Kantor Tunggal">Kantor Tunggal</option>
+<option value="Kantor Pusat">Kantor Pusat</option>
+<option value="Kantor Pembantu">Kantor Pembantu</option>
+<option value="Perwakilan">Perwakilan</option>
+<option value="Bukan Kantor">Bukan Kantor</option>
 </select></label></td></tr>
 <tr><td colspan='2'></td></tr>
 <tr><td>Tahun Berdiri</td>
@@ -283,12 +284,7 @@ echo "<tr><td colspan='2'></td></tr>";
 }
 ?>
 <tr><td></td><td><input class="button" type="submit" name="btnsubmit" id="btnsubmit" /></td></tr>
-
   </table>
-  
-  
-  
-  
   </form>
 
   </body>
