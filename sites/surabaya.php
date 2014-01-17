@@ -8,6 +8,7 @@
 <style type="text/css">
 <!--
 .a{
+
 	text-decoration:blink;
 	color: #0000FF;
 }
