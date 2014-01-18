@@ -1,13 +1,4 @@
 <?php
-/**
- * Topic pruning page.
- *
- * Allows administrators to delete older topics from the site.
- *
- * @copyright (C) 2008-2012 PunBB, partially based on code (C) 2008-2009 FluxBB.org
- * @license http://www.gnu.org/licenses/gpl.html GPL version 2 or higher
- * @package PunBB
- */
 
 
 if (!defined('FORUM_ROOT'))
